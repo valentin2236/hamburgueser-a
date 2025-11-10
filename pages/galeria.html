@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Burger Haus — Galería</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="border-bottom sticky-top bg-white">
+    <nav class="navbar navbar-expand-lg container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/img/logo.svg" alt="Logo Burger Haus" width="28" height="28">
+        <span class="fw-semibold">Burger Haus</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link active" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+        <button id="btnTheme" class="btn btn-outline-secondary ms-lg-3">Modo oscuro</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="py-5 bg-body-secondary border-bottom">
+      <div class="container">
+        <h1 class="display-6 fw-bold mb-2">Galería</h1>
+        <p class="text-secondary mb-0">Un vistazo a nuestra cocina y a tus favoritos.</p>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="gallery-grid">
+          <!-- reemplazá las rutas por tus imágenes -->
+          <img src="assets/img/g1.jpg" alt="Hamburguesa con doble cheddar" loading="lazy">
+          <img src="assets/img/g2.jpg" alt="Papas rústicas" loading="lazy">
+          <img src="assets/img/g3.jpg" alt="Cocción a la plancha" loading="lazy">
+          <img src="assets/img/g4.jpg" alt="Combo con bebida" loading="lazy">
+          <img src="assets/img/g5.jpg" alt="Local ambientado" loading="lazy">
+          <img src="assets/img/g6.jpg" alt="Salsas caseras" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-top mt-5 py-4">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between gap-3">
+      <small>&copy; <span id="y"></span> Burger Haus</small>
+      <a class="link-body-emphasis" href="contacto.html">Reservar</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
