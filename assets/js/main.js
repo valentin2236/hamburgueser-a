@@ -54,3 +54,6 @@ document.querySelectorAll('.navbar .nav-link').forEach(link=>{
     bsCollapse?.hide();
   });
 });
+
+
+

@@ -135,3 +135,115 @@ NOSOTROS
 }
 
 
+/* ===== DARK THEME HARDENING ===== */
+.theme-dark body{
+  background:#0B0F1A;
+  color:#E8EAED;
+}
+
+/* Superficies claras por defecto */
+.theme-dark .bg-white,
+.theme-dark .card,
+.theme-dark .offcanvas,
+.theme-dark .modal-content{
+  background:#121826 !important;
+  color:#E8EAED;
+}
+
+/* Fondos de Bootstrap */
+.theme-dark .bg-body,
+.theme-dark .bg-body-tertiary,
+.theme-dark .bg-body-secondary{
+  background:#0F1626 !important;
+  color:#E8EAED;
+}
+
+/* Bordes / separadores */
+.theme-dark .border,
+.theme-dark .border-top,
+.theme-dark .border-bottom,
+.theme-dark .border-start,
+.theme-dark .border-end,
+.theme-dark .list-group-item{
+  border-color:#1b2237 !important;
+}
+
+/* Textos secundarios / links blandos */
+.theme-dark .text-secondary,
+.theme-dark .link-secondary{
+  color:#A8B3CF !important;
+}
+
+/* Links de énfasis */
+.theme-dark .link-body-emphasis{
+  color:#E8EAED !important;
+}
+
+/* Navbar / dropdown */
+.theme-dark .navbar{
+  background:#0F1626 !important;
+  border-color:#1b2237 !important;
+}
+.theme-dark .dropdown-menu{
+  background:#121826;
+  border-color:#1b2237;
+}
+
+/* Tablas */
+.theme-dark .table{
+  --bs-table-bg:#121826;
+  --bs-table-color:#E8EAED;
+  --bs-table-border-color:#1b2237;
+}
+.theme-dark .table-striped>tbody>tr:nth-of-type(odd){
+  --bs-table-accent-bg:#0F1626;
+}
+
+/* Alerts / outline buttons */
+.theme-dark .alert{
+  background:#121826;
+  color:#E8EAED;
+  border-color:#1b2237;
+}
+.theme-dark .btn-outline-secondary{
+  color:#E8EAED;
+  border-color:#3a4468;
+}
+.theme-dark .btn-outline-secondary:hover{
+  background:#3a4468;
+  color:#fff;
+}
+
+/* Formularios */
+.theme-dark .form-control,
+.theme-dark .form-select{
+  background:#0F1626;
+  color:#E8EAED;
+  border-color:#1b2237;
+}
+.theme-dark .form-control:focus,
+.theme-dark .form-select:focus{
+  background:#121826;
+  border-color:#3a4468;
+  color:#fff;
+  box-shadow:0 0 0 .2rem rgba(58,68,104,.25);
+}
+
+/* Hero con imagen: oscurecer más si hace falta */
+.theme-dark .hero{
+  background-blend-mode: multiply, normal;
+}
+
+
+
+/* ===== GALERÍA ===== */
+.gallery img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  filter: brightness(80%);
+}
+
