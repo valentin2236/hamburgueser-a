@@ -1,0 +1,15 @@
+.hover-raise {
+  transition: transform .2s ease, box-shadow .2s ease;
+  will-change: transform, box-shadow;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.16);
+  }
+}
+
+.card img {
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-bottom: 3px solid rgba($brand, .4);
+}

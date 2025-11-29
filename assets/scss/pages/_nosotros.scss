@@ -1,0 +1,20 @@
+.timeline {
+  position: relative; padding-left: 1.25rem; border-left: 3px solid $brand;
+  .step {
+    position: relative; margin-bottom: 1rem;
+    &::before {
+      content: ""; position: absolute; left: -11px; top: .15rem;
+      width: .9rem; height: .9rem; border-radius: 50%;
+      background: $accent; border: 2px solid #fff; box-shadow: 0 0 0 3px $brand;
+    }
+  }
+}
+
+.stat { @include flex-center(.75rem);
+  .num { font-weight: 800; font-size: 1.5rem; color: $accent; }
+}
+
+.grid-vals {
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}

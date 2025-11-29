@@ -24,19 +24,31 @@
       content="https://valentin2236.github.io/hamburgueser-a/"
     />
 
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- AOS Styles -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
     <!-- Navbar-->
     <header class="border-bottom sticky-top bg-white">
-      <nav class="navbar navbar-expand-lg container">
+      <nav
+        class="navbar navbar-expand-lg container"
+        data-aos="fade-down"
+      >
         <a
           class="navbar-brand d-flex align-items-center gap-2"
-          href="/index.html"
+          href="../index.html"
         >
           <img
             src="../assets/img/logo.png"
@@ -75,47 +87,64 @@
         </div>
       </nav>
     </header>
-    <!-- Hero-->
+
     <main>
-      <section class="py-5 bg-burger border-bottom">
-        <div class="container text-white">
+      <!-- Hero-->
+      <section class="py-5 hero galeria border-bottom">
+        <div
+          class="container hero-content text-white"
+          data-aos="fade-up"
+        >
           <h1 class="display-6 fw-bold mb-2">Galería</h1>
           <p class="mb-0">Un vistazo a nuestras burgas.</p>
         </div>
       </section>
-      <!--Galeria de imagenes-->
-      <section class="py-5 gallery">
+
+      <!--Galería de imágenes-->
+      <section class="py-5">
         <div class="container">
-          <div class="gallery-grid">
+          <div class="gallery-masonry">
             <img
               src="../assets/img/hambuerguesa a punto .jpg"
               alt="Hamburguesa con doble cheddar"
               loading="lazy"
+              data-aos="zoom-in"
+              data-aos-delay="100"
             />
             <img
               src="../assets/img/hamburgesa con papas.jpg"
               alt="hamburguesa con papas"
               loading="lazy"
+              data-aos="zoom-in"
+              data-aos-delay="200"
             />
             <img
               src="../assets/img/panes en mesada.jpg"
               alt="panes en la mesada"
               loading="lazy"
+              data-aos="zoom-in"
+              data-aos-delay="300"
             />
             <img
               src="../assets/img/onion con papas.jpg"
               alt="onion con papas"
               loading="lazy"
+              data-aos="zoom-in"
+              data-aos-delay="400"
             />
             <img
               src="../assets/img/chesse bacon 3.jpg"
               alt="cheese bacon"
               loading="lazy"
+              data-aos="zoom-in"
+              data-aos-delay="500"
             />
             <img
               src="../assets/img/burgerboomneon.png"
               alt="cartel neon"
               loading="lazy"
+              data-aos="zoom-in"
+              data-aos-delay="600"
             />
           </div>
         </div>
@@ -123,7 +152,7 @@
     </main>
 
     <!--Footer-->
-    <footer class="border-top mt-5 py-4">
+    <footer class="border-top mt-5 py-4" data-aos="fade-up">
       <div
         class="container d-flex flex-column flex-lg-row justify-content-between gap-3"
       >
@@ -152,7 +181,20 @@
         </ul>
       </div>
     </footer>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        easing: "ease-out",
+        once: true,
+      });
+    </script>
+
     <script src="../assets/js/main.js"></script>
   </body>
 </html>

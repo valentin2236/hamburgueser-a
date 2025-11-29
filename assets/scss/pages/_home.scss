@@ -1,0 +1,5 @@
+.cta-band {
+  background: linear-gradient(90deg, $brand-dark, $brand);
+  color: #fff; border-radius: 1rem; padding: 1rem 1.25rem;
+  @include up(md){ padding: 1.25rem 1.75rem; }
+}

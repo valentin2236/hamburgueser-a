@@ -1,0 +1,87 @@
+.hero {
+  min-height: clamp(420px, 70vh, 60px);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.75));
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(12px);
+    animation: hero-up .8s ease-out forwards;
+  }
+}
+
+/* SOLO HOME: imagen de fondo */
+.hero.home {
+  background:
+    url("../img/burgerboomneon.png") center/cover no-repeat;
+}
+
+/* RESTO DE PÁGINAS: solo gradientes, sin imagen */
+.hero.menu {
+  background: linear-gradient(135deg, $brand-dark, $brand);
+}
+
+.hero.galeria {
+  background: linear-gradient(135deg, #151515, $brand-dark);
+}
+
+.hero.nosotros {
+  background: linear-gradient(135deg, $brand-dark, #828588);
+}
+
+.hero.contact {
+  background: linear-gradient(135deg, $brand, $accent);
+}
+// Animación de entrada del texto
+@keyframes hero-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero .hero-content {
+  animation: heroFadeUp 0.8s ease-out forwards;
+}
+
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all .8s ease;
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,14 @@
+.badge-soft {
+  background: color-mix(in srgb, $accent 30%, transparent);
+  color: #7a5b00; border: 1px solid color-mix(in srgb, $accent 60%, transparent);
+  padding: .35rem .6rem; border-radius: 999px; font-weight: 600;
+}
+
+// Generación de variantes con @each (ejemplo evaluable)
+@each $name, $c in $badge-colors {
+  .badge-#{$name} {
+    background: color-mix(in srgb, $c 30%, transparent);
+    border: 1px solid color-mix(in srgb, $c 60%, transparent);
+    color: if(lightness($c) > 60, #333, #fff);
+  }
+}

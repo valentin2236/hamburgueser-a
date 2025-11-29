@@ -1,0 +1,22 @@
+// Import ordenado
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/hero";
+
+@import "components/buttons";
+@import "components/cards";
+@import "components/gallery";
+
+@import "pages/home";
+@import "pages/menu";
+@import "pages/galeria";
+@import "pages/nosotros";
+@import "pages/contacto";
+
+@import "themes/dark";

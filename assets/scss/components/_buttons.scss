@@ -1,0 +1,15 @@
+.btn-primary,
+.btn-outline-light,
+.btn-outline-secondary {
+  @extend %btn-base;
+}
+
+.btn-primary {
+  background: $brand;
+  border-color: $brand;
+
+  &:hover {
+    background: $brand-dark;
+    border-color: $brand-dark;
+  }
+}

@@ -1,0 +1,33 @@
+// Media query
+@mixin up($breakpoint) {
+  @if $breakpoint == sm { @media (min-width: $bp-sm) { @content; } }
+  @else if $breakpoint == md { @media (min-width: $bp-md) { @content; } }
+  @else if $breakpoint == lg { @media (min-width: $bp-lg) { @content; } }
+  @else if $breakpoint == xl { @media (min-width: $bp-xl) { @content; } }
+}
+
+// Centro flex rápido
+@mixin flex-center($gap: .75rem) {
+  display: flex; align-items: center; justify-content: center; gap: $gap;
+}
+
+// Botón base (para @extend)
+%btn-base {
+  border-radius: .75rem;
+  font-weight: 600;
+  transition: transform .16s ease, box-shadow .16s ease, background-color .16s ease;
+  will-change: transform, box-shadow;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-soft;
+  }
+}
+
+
+// Visually hidden (accesibilidad)
+@mixin sr-only {
+  position:absolute!important; width:1px!important; height:1px!important;
+  padding:0!important; margin:-1px!important; overflow:hidden!important;
+  clip:rect(0,0,0,0)!important; border:0!important;
+}
